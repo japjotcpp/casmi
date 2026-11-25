@@ -1,0 +1,12 @@
+[project]
+name = "casmi26-baseline"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2,<3",
+    "pyarrow>=19",
+]
+
+[dependency-groups]
+dev = ["kaggle==2.2.5", "six>=1.17", "rdkit"]
+neural = ["torch>=2.7,<3", "rdkit"]
